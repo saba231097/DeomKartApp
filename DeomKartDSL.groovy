@@ -1,7 +1,7 @@
 job('DemoKart-via-DSL'){
     description("My first DemoKart project via DSL")
     scm{
-        git("https://github.com/saba231097/DeomKartApp.git", "main")
+        git("https://github.com/saba231097/DeomKartApp.git", "*/main")
     }
     triggers{
         scm('* * * * *')
