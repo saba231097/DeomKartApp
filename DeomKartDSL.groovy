@@ -10,7 +10,7 @@ job('DemoKart-via-DSL'){
         maven('clean package', 'pom.xml')
     }
     publishers{
-        //archive the generated war file
+        //archive the generated war file....
         archiveArtifacts '**/*.war'
     }
 }
