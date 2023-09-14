@@ -17,5 +17,6 @@ job('DemoKart-via-DSL'){
  listView('DSL_Jobs') {
     jobs {
         name('DemoKart-via-DSL')
+        name('DSL_Seed_Job')
     }
  }      
