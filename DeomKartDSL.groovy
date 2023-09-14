@@ -14,9 +14,9 @@ job('DemoKart-via-DSL'){
         archiveArtifacts '**/*.war'
     }
 }
- listView('DSL_Jobs') {
+ /*listView('DSL_Jobs') {
     jobs {
         name('DemoKart-via-DSL')
         name('DSL_Seed_Job')
-    }
- }      
+    } 
+ } */
