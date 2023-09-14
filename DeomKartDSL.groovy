@@ -7,7 +7,7 @@ job('DemoKart-via-DSL'){
         scm('* * * * *')
     }
     steps{
-        maven('clean package', 'maven pom.xml')
+        maven('clean package', 'pom.xml')
     }
     publishers{
         //archive the generated war file
