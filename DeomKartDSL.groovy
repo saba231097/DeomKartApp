@@ -1,12 +1,5 @@
 job('DemoKart-via-DSL'){
     description("My first DemoKart project via DSL")
-    views {
-        listView('DSL_Jobs') {
-            jobs {
-                name('DemoKart-via-DSL')
-            }
-        }
-    }
     scm{
         git("https://github.com/saba231097/DeomKartApp.git", "*/main")
     }
@@ -21,3 +14,10 @@ job('DemoKart-via-DSL'){
         archiveArtifacts '**/*.war'
     }
 }
+views {
+        listView('DSL_Jobs') {
+            jobs {
+                name('DemoKart-via-DSL')
+            }
+        }
+    }
