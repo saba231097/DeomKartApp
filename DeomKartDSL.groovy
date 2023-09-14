@@ -4,10 +4,10 @@ job('DemoKart-via-DSL'){
         git("https://github.com/saba231097/DeomKartApp.git", "main")
     }
     triggers{
-        scm('*****')
+        scm('* * * * *')
     }
     steps{
-        maven('clean package', 'maven pom.xml pom.xml')
+        maven('clean package', 'maven pom.xml')
     }
     publishers{
         //archive the generated war file
